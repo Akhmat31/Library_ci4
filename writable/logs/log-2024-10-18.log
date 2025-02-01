@@ -1,0 +1,14 @@
+CRITICAL - 2024-10-18 05:21:38 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: member]
+in APPPATH\Views\member.php on line 154.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('member', [], true)
+ 4 APPPATH\Controllers\Member.php(42): view('member', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Member->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\m-mahfudli-a-11-tkj-3\\appstarter\\public\\index.php')
